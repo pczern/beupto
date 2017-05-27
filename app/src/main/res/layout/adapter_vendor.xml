@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/image_slider_height"
+    android:orientation="vertical"
+
+    >
+    
+
+
+    <ImageView
+        android:id="@+id/entry_imageview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/placeholder"
+        android:scaleType="centerCrop"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:src="@drawable/shadow_vendor_top"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="104dp"
+        android:src="@drawable/shadow_vendor_bottom"
+        android:layout_alignParentBottom="true"/>
+
+        <TextView
+            android:id="@+id/headline_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:shadowColor="#55000000"
+            android:shadowRadius="10"
+            android:fontFamily="sans-serif-medium"
+            android:text="Here we go"
+            android:textSize="20sp"
+            android:lineSpacingExtra="2dp"
+            android:maxLines="2"
+            android:layout_marginBottom="44dp"
+            android:layout_alignParentBottom="true"
+            android:textColor="#FFF"
+            android:paddingRight="32dp"
+            android:paddingLeft="32dp"
+
+            android:ellipsize="end"/>
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="57dp"
+    android:background="#FFF"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:clickable="true">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:background="?attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="56dp"
+            android:id="@+id/imageView"
+            android:src="@drawable/ic_chevron_right_black_48dp"
+            android:layout_marginLeft="16dp"
+            android:layout_centerVertical="true"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+
+
+            />
+        <LinearLayout
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="72dp"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No name"
+                android:id="@+id/title"
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:layout_centerVertical="true"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+    <View
+        android:id="@+id/borderline"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#1F000000"
+        android:layout_marginLeft="72dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="16dp"/>
+</LinearLayout>

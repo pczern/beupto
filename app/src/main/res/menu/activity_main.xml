@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_search"
+        app:showAsAction="always"
+        android:title="Search"
+        android:icon="@drawable/ic_search_black_24dp"
+        />
+
+    <item
+        android:id="@+id/action_sort"
+        app:showAsAction="always"
+        android:title="Sort Content"
+        android:icon="@drawable/ic_sort_black_24dp"
+        />
+
+    <item
+        android:id="@+id/action_refresh"
+        app:showAsAction="never"
+        android:title="Refresh Now"/>
+    <item
+        android:id="@+id/action_layout"
+        app:showAsAction="never"
+        android:title="Customize Layout"/>
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+</menu>

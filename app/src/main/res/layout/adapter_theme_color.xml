@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="32dp"
+    android:id="@+id/settings_accent_color"
+
+    android:paddingLeft="24dp"
+
+
+    android:paddingRight="16dp"
+
+    android:gravity="center"
+    android:background="?attr/selectableItemBackground"
+
+    >
+
+
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/color_imageview"
+            android:scaleType="fitCenter"
+            fresco:roundAsCircle="true"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="16dp"/>
+
+        <!--          <ImageView
+                      android:id="@+id/settings_accent_color_imageview"
+                      android:layout_width="48dp"
+                      android:layout_height="48dp"
+                      android:layout_marginRight="16dp"
+                      android:background="#FF0000"/>-->
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:gravity="center_vertical"
+            android:minHeight="56dp"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            >
+
+
+            <TextView
+                android:id="@+id/color_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Color"
+                android:textColor="@color/introduction_color_accent"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+

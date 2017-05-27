@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:paddingLeft="32dp"
+    android:paddingRight="32dp">
+
+
+    <ImageView
+        android:id="@+id/header_imageview"
+        android:layout_width="224dp"
+        android:layout_height="224dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp"
+        android:paddingBottom="32dp"
+        android:paddingTop="32dp"
+        android:src="@drawable/ic_public_grey_600_48dp"
+        android:tint="#99808080"
+        android:tintMode="src_in"
+        android:layout_gravity="center"
+
+        />
+
+
+    <LinearLayout
+        android:id="@+id/input_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_imageview"
+        android:layout_marginTop="-20dp"
+        android:orientation="vertical"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp">
+
+        <TextView
+            android:id="@+id/name_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/name_edittext"
+            android:text="@string/introduction_socialmedia_title"
+            android:textAlignment="center"
+            android:textColor="@color/introduction_title"
+
+            android:layout_marginBottom="16dp"
+            android:textSize="30sp"
+
+            />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <net.steamcrafted.materialiconlib.MaterialIconView
+                android:id="@+id/googleplus_materialiconview"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:scaleType="center"
+                app:materialIcon="google_plus"
+                app:materialIconColor="#dd4b39"
+                app:materialIconSize="48dp"
+                android:padding="4dp"
+                android:layout_marginRight="12dp"
+                android:layout_toLeftOf="@+id/twitter_materialiconview"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                />
+
+
+            <net.steamcrafted.materialiconlib.MaterialIconView
+                android:id="@+id/twitter_materialiconview"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:scaleType="center"
+                app:materialIcon="twitter"
+                app:materialIconColor="#55acee"
+                app:materialIconSize="40dp"
+                android:layout_centerHorizontal="true"
+                android:padding="4dp"
+                android:clickable="true"
+                android:focusable="true"
+                />
+            <net.steamcrafted.materialiconlib.MaterialIconView
+            android:id="@+id/facebook_materialiconview"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:scaleType="center"
+            app:materialIcon="facebook_box"
+            app:materialIconColor="#3b5998"
+            app:materialIconSize="38dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_toRightOf="@+id/twitter_materialiconview"
+                android:background="?attr/selectableItemBackgroundBorderless"
+
+                android:layout_marginLeft="9dp"
+            />
+
+
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/introduction_skip"
+            android:text="@string/introduction_skip_account_syncing"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="12dp"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="96dp"
+        android:lineSpacingExtra="2dp"
+        android:text="@string/introduction_socialmedia_subinformation"
+
+        android:textAlignment="center"
+        android:textColor="@color/introduction_subinformation" />
+
+</LinearLayout>

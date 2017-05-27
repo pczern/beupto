@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:paddingLeft="32dp"
+    android:paddingRight="32dp">
+
+
+    <net.steamcrafted.materialiconlib.MaterialIconView
+
+
+        android:id="@+id/header_imageview"
+        android:layout_width="224dp"
+        android:layout_height="224dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+
+        android:layout_marginTop="56dp"
+        android:paddingBottom="32dp"
+        android:paddingTop="32dp"
+        android:scaleType="center"
+        app:materialIcon="account_circle"
+        app:materialIconColor="#99808080"
+
+        app:materialIconSize="176dp" />
+
+
+    <LinearLayout
+        android:id="@+id/input_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_imageview"
+        android:layout_marginTop="-20dp"
+        android:orientation="vertical"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/name_edittext"
+            android:text="Welcome"
+            android:textAlignment="center"
+            android:textColor="@color/introduction_title"
+            android:textSize="30sp"
+            />
+        <TextView
+            android:id="@+id/name_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/name_edittext"
+            android:text="User123"
+            android:textAlignment="center"
+            android:textColor="#66000000"
+            android:textSize="24sp"
+            android:padding="8dp"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+
+            android:lineSpacingExtra="2dp"
+            android:text="BeUpTo is all about subscribing to the best News you ever wanted. Just try it, subscribe something and explore the possiblities."
+            android:textAlignment="center"
+
+            android:textColor="@color/introduction_subinformation"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

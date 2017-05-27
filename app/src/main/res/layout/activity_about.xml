@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+
+    android:background="?colorPrimary"
+    >
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/logo_proportional"
+        android:tint="#FFFFFF"
+
+      />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="BeUpTo"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:textSize="40sp"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-regular"
+        android:text="Explore Follow Enjoy."
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textColor="#FFF"/>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="support@beup2.com"
+        android:textAlignment="center"
+        android:layout_marginTop="48dp"
+
+        android:textSize="15sp"
+        android:textColor="#FFF"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:paddingRight="32dp"
+        android:paddingLeft="32dp"
+        android:orientation="horizontal">
+        <TextView
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-regular"
+            android:text="Libraries"
+            android:textAlignment="center"
+            android:layout_weight="1"
+
+            android:textColor="#FFF"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-regular"
+            android:text="|"
+            android:textAlignment="center"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:textSize="16sp"
+            android:textColor="#FFF"/>
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-regular"
+            android:text="Data Privacy"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:textColor="#FFF"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-regular"
+            android:text="|"
+            android:textAlignment="center"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:textSize="16sp"
+            android:letterSpacing="0.1"
+            android:textColor="#FFF"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-regular"
+            android:text="License"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:layout_weight="1"
+            android:letterSpacing="0.1"
+            android:textColor="#FFF"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

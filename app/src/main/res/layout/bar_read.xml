@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="@dimen/readerpanel_height"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/view_bar_entry_view"
+    android:background="@drawable/shadow_bar_read_top"
+    android:paddingTop="2dp">
+  <!--  <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:src="@drawable/shadow_bar_read_top"/>-->
+    <LinearLayout
+
+        android:id="@+id/icon_list"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:paddingTop="11dp"
+        android:paddingBottom="11dp"
+        android:background="?attr/colorAccent"
+
+
+
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <net.steamcrafted.materialiconlib.MaterialIconView
+            android:id="@+id/like"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            app:materialIcon="heart_outline"
+            app:materialIconSize="24dp"
+            app:materialIconColor="#FFF"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:focusable="true"
+            android:clickable="true"/>
+
+        <net.steamcrafted.materialiconlib.MaterialIconView
+            android:id="@+id/bookmark"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            app:materialIcon="bookmark_outline"
+            app:materialIconSize="24dp"
+            app:materialIconColor="#FFF"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:focusable="true"
+            android:clickable="true"
+            />
+
+        <net.steamcrafted.materialiconlib.MaterialIconView
+            android:id="@+id/comments"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            app:materialIcon="comment_text"
+            app:materialIconSize="24dp"
+            app:materialIconColor="#FFF"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:focusable="true"
+            android:clickable="true"/>
+        <net.steamcrafted.materialiconlib.MaterialIconView
+            android:id="@+id/dashboard"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            app:materialIcon="theme_light_dark"
+            app:materialIconSize="24dp"
+            app:materialIconColor="#FFF"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:focusable="true"
+            android:clickable="true"/>
+        <net.steamcrafted.materialiconlib.MaterialIconView
+            android:id="@+id/forward"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            app:materialIcon="forward"
+            app:materialIconSize="24dp"
+            app:materialIconColor="#FFF"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:focusable="true"
+            android:clickable="true"/>
+    </LinearLayout>
+</LinearLayout>

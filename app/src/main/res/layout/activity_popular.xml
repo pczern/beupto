@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pure_white">
+
+
+    <com.github.ksoichiro.android.observablescrollview.ObservableScrollView
+        android:id="@+id/observablescrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="16dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="220dp">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?colorPrimary"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentBottom="true"
+                    android:src="@drawable/bkg"/>
+                <TextView
+                    android:id="@+id/headline"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_marginTop="100dp"
+                    android:shadowRadius="20"
+                    android:shadowColor="#44000000"
+                    android:textColor="@android:color/white"
+                    android:text="Popular"
+                    android:fontFamily="sans-serif-regular"
+                    android:textSize="30sp"
+                    android:letterSpacing="0.02"
+
+                   />
+                <TextView
+
+                    android:layout_below="@+id/headline"
+                    android:id="@+id/subheadline"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+
+                    android:shadowRadius="1"
+                    android:shadowColor="#11000000"
+                    android:textColor="@android:color/white"
+                    android:text="Get only the best"
+                    android:fontFamily="sans-serif-regular"
+                    android:textSize="20sp"
+                    android:layout_marginTop="8dp"
+                    android:letterSpacing="0.07"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:textSize="@dimen/settings_subheader_textview_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:fontFamily="sans-serif-medium"
+                android:paddingTop="16dp"
+                android:paddingBottom="8dp"
+                android:text="New Channels"
+                android:textColor="?attr/colorAccent" />
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/newchannels_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+            <TextView
+                android:textSize="@dimen/settings_subheader_textview_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:fontFamily="sans-serif-medium"
+                android:paddingTop="16dp"
+                android:text="Trending"
+                android:paddingBottom="8dp"
+                android:textColor="?attr/colorAccent" />
+            <TextView
+                android:textSize="@dimen/settings_subheader_textview_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:fontFamily="sans-serif-regular"
+
+                android:text="Coming soon..."
+                android:textColor="@color/dark_text_secondary" />
+            <android.support.v7.widget.RecyclerView
+                android:visibility="gone"
+                android:id="@+id/newvideos_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+    </com.github.ksoichiro.android.observablescrollview.ObservableScrollView>
+</FrameLayout>

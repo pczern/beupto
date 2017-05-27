@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="me.speeddeveloper.beupto">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+    <application
+        android:hardwareAccelerated="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:name=".MainApplication"
+        android:theme="@style/Theme.Transparent">
+        <meta-data android:name="io.fabric.ApiKey" android:value="@string/twitter_consumer_key"/>
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/LightTheme.NoActionBar.Cyan.PinkA400"
+            >
+        </activity>
+        <activity
+            android:name=".activity.settings.SettingsActivity"
+            android:label="@string/app_name"
+            android:theme="@style/LightTheme.NoActionBar.Cyan.PinkA400">
+        </activity>
+        <activity
+            android:name=".activity.settings.ThemeActivity"
+            android:label="@string/app_name"
+            android:theme="@style/LightTheme.NoActionBar.Cyan.PinkA400">
+        </activity>
+        <activity
+            android:name=".activity.SubscriptionActivity"
+            android:label="Following"
+            android:theme="@style/LightTheme.NoActionBar.Cyan.PinkA400">
+        </activity>
+        <activity
+            android:name=".activity.ReadActivity"
+            android:label="@string/app_name"
+            android:theme="@style/LightTheme.NoActionBar.Transparent.Cyan.PinkA400">
+        </activity>
+        <activity
+            android:name=".activity.IntroActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Transparent">
+        </activity>
+        <activity
+            android:name=".activity.SearchActivity"
+            android:label="@string/app_name"
+            android:theme="@style/LightTheme.NoActionBar.Cyan.PinkA400">
+        </activity>
+        <activity
+            android:name=".activity.VendorActivity"
+            android:label="@string/app_name"
+            android:theme="@style/LightTheme.NoActionBar.Cyan.PinkA400">
+        </activity>
+        <activity
+            android:name=".activity.PopularActivity"
+            android:label="@string/app_name"
+            android:theme="@style/LightTheme.NoActionBar.Cyan.PinkA400">
+        </activity>
+        <activity
+            android:name=".activity.VendorPodcastActivity"
+            android:label="@string/app_name"
+            android:theme="@style/LightTheme.NoActionBar.Cyan.PinkA400">
+        </activity>
+        <activity
+            android:name=".activity.VendorYoutubeActivity"
+            android:label="@string/app_name"
+            android:theme="@style/LightTheme.NoActionBar.Cyan.PinkA400">
+        </activity>
+        <activity
+            android:name=".activity.settings.SettingsReadActivity"
+            android:label="Reader Settings"
+            android:theme="@style/LightTheme.NoActionBar.Cyan.PinkA400">
+        </activity>
+        <activity
+            android:name=".activity.AboutActivity"
+            android:label="About"
+            android:theme="@style/LightTheme.NoActionBar.Cyan.PinkA400">
+        </activity>
+        <activity
+            android:name=".activity.StartActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Transparent"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan"
+           >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="show_readerpanel_array">
+        <item>On Scroll Up</item>
+        <item>Underfoot</item>
+        <item>Always</item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "702765757599",
+    "firebase_url": "https://beupto-32b61.firebaseio.com",
+    "project_id": "beupto-32b61",
+    "storage_bucket": "beupto-32b61.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:702765757599:android:0b4a30666c1bf5e5",
+        "android_client_info": {
+          "package_name": "me.speeddeveloper.beupto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "702765757599-rhgsn766ckjf7nq11ah0bdtqn1plg7th.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "me.speeddeveloper.beupto",
+            "certificate_hash": "C252001A55B518DBAC9903919D4C67356B2D64E0"
+          }
+        },
+        {
+          "client_id": "702765757599-or78tpqstugnd06d8sd2ac3d1v8n978g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKK8TkSWZZLSss8uyB4cr6NQHPztj2L_k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "702765757599-or78tpqstugnd06d8sd2ac3d1v8n978g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

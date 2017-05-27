@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentInsetStart="0dp"
+            app:layout_scrollFlags="enterAlways">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/search_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="?android:attr/actionBarSize"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="Search News You Like..."
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:textColor="#FFF"
+                    android:textColorHint="#5FFFFFFF"></EditText>
+                <ImageView
+                    android:id="@+id/mic_imageview"
+                    android:layout_width="56dp"
+                    android:layout_height="24dp"
+                    android:layout_weight="0"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:src="@drawable/ic_mic_white_24dp"
+                    android:scaleType="centerInside" />
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+        </android.support.design.widget.TabLayout>
+    </android.support.design.widget.AppBarLayout>
+    <ViewFlipper
+        android:id="@+id/viewflipper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/app_bar"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="The Awesome\nDon't complain about this\nThe store men"/>
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </ViewFlipper>
+
+
+    <!-- <include
+         android:background="@color/colorWhite"
+         android:layout_height="?android:attr/actionBarSize"
+         android:layout_width="match_parent"
+         android:layout_alignParentTop="true"
+         android:id="@+id/cs_header"
+         layout="@layout/view_search_input" />-->
+
+
+    <!--<ViewFlipper
+        android:layout_marginTop="1.7dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewFlipper">
+
+        <include android:id="@+id/autocomplete_recyclerview_include" layout="@layout/search_autocomplete_recyclerview" />
+        <include android:id="@+id/result_linearlayout_include" layout="@layout/view_search_result" />
+        <include android:id="@+id/old_nothingfound_include" layout="@layout/old_nothingfound" />
+    </ViewFlipper>-->
+</RelativeLayout>

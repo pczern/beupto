@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_news"
+
+            android:title="All News, Podcasts, Videos.."
+            app:actionLayout="@layout/nav_action_layout"/>
+      <!--  <item
+            android:id="@+id/nav_popular"
+            android:icon="@drawable/ic_favorite_dark"
+            android:title="Popular Now" />
+        <item
+            android:id="@+id/nav_recommendations"
+            android:icon="@drawable/ic_star"
+            android:title="Recommended" />
+        <item
+            android:id="@+id/nav_search"
+            android:icon="@drawable/ic_search_24dp"
+            android:title="Find Media" />-->
+        <!--<item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Slideshow" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Tools" />-->
+    </group>
+
+   <!-- <item android:title="Me">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_account"
+                    android:icon="@drawable/ic_user"
+                    android:title="My Account" />
+                <item
+                    android:id="@+id/nav_subscriptions"
+                    android:icon="@drawable/ic_subscriptions_dark"
+                    android:title="Subscriptions" />
+
+                &lt;!&ndash;    <item
+                        android:id="@+id/nav_send"
+                        android:icon="@drawable/ic_menu_share"
+                        android:title="Share my account" />&ndash;&gt;
+            </group>
+        </menu>
+    </item>
+
+    <group android:id="@+id/app_divider" android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings_dark"
+            android:title="Settings" />
+        <item
+            android:id="@+id/nav_support"
+            android:icon="@drawable/ic_feedback_dark"
+            android:title="Get support" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_copyright_dark"
+            android:title="About" />
+
+    </group>
+-->
+
+</menu>

@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:elevation="0dp">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            app:layout_scrollFlags=""
+
+
+            >
+
+        </android.support.v7.widget.Toolbar>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="40dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="10dp"
+
+            >
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/logo_proportional"
+
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/subtitle_textview"
+                    android:text="Themes/Colors/Appearance"
+                    android:textAppearance="@android:style/TextAppearance.Small"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/title_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Because We Love Colors"
+                    android:textAppearance="@android:style/TextAppearance.Medium"
+                    android:textSize="22sp"
+                    android:textStyle="" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.design.widget.AppBarLayout>
+    <!--<GridView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:numColumns="2"
+        android:id="@+id/grid_view"
+        >
+
+    </GridView>-->
+
+    <android.support.v4.widget.NestedScrollView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/coordinatorlayout"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingRight="8dp"
+            android:paddingLeft="8dp"
+            >
+
+
+            <TextView
+                android:textSize="@dimen/settings_subheader_textview_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:fontFamily="sans-serif-medium"
+                android:paddingTop="16dp"
+                android:text="Theme"
+                android:textColor="?attr/colorAccent" />
+
+
+            <LinearLayout
+                android:id="@+id/settings_lighttheme"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="16dp"
+                android:paddingTop="8dp"
+                android:gravity="center"
+                android:background="?attr/selectableItemBackground"
+                android:focusable="true"
+                android:clickable="true"
+
+                >
+
+
+
+
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Light Theme"
+                        android:textAppearance="@android:style/TextAppearance.Medium"
+                        android:textSize="@dimen/settings_headline_textview_size"
+                        android:layout_weight="1"
+                        />
+
+
+
+                    <Switch
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/settings_lighttheme_switch"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        />
+
+            </LinearLayout>
+
+
+
+
+            <TextView
+                android:textSize="@dimen/settings_subheader_textview_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:fontFamily="sans-serif-medium"
+                android:paddingTop="16dp"
+                android:text="Colors"
+                android:textColor="?attr/colorAccent" />
+
+
+            <LinearLayout
+                android:id="@+id/settings_primary_color"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="8dp"
+                android:gravity="center"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                >
+
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/settings_primary_color_imageview"
+                    android:scaleType="fitCenter"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="16dp"
+                    fresco:roundAsCircle="true" />
+
+
+
+                <LinearLayout
+                    android:id="@+id/settings_primary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:minHeight="72dp"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    >
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Primary Color"
+                        android:textAppearance="@android:style/TextAppearance.Medium"
+                        android:textSize="@dimen/settings_headline_textview_size" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Color of Toolbar"
+                        android:textAppearance="@android:style/TextAppearance.Small"
+                        android:textSize="@dimen/settings_subheadline_textview_size" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/settings_divider"></View>
+
+
+            <LinearLayout
+                android:id="@+id/settings_accent_color"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="8dp"
+                android:gravity="center"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                >
+
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/settings_accent_color_imageview"
+                    android:scaleType="fitCenter"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="16dp"
+                    fresco:roundAsCircle="true" />
+
+      <!--          <ImageView
+                    android:id="@+id/settings_accent_color_imageview"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginRight="16dp"
+                    android:background="#FF0000"/>-->
+
+                <LinearLayout
+                    android:id="@+id/settings_accent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:gravity="center_vertical"
+                    android:minHeight="72dp"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    >
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Accent Color"
+                        android:textAppearance="@android:style/TextAppearance.Medium"
+
+                        android:textSize="@dimen/settings_headline_textview_size" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Buttons/Subheaders/Highlight"
+                        android:textAppearance="@android:style/TextAppearance.Small"
+                        android:textSize="@dimen/settings_subheadline_textview_size" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        android:background="?attr/selectableItemBackground"
+        android:src="@drawable/ic_bubble_chart_white_24dp"
+        app:layout_anchor="@id/app_bar"
+        app:layout_anchorGravity="bottom|end" />
+
+
+</android.support.design.widget.CoordinatorLayout>
+
+
+
+
